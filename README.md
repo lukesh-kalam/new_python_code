@@ -23,3 +23,4 @@ with open ("console.log", "r") as myfile , open('output.log','a') as addfile :
         a_string = "".join(useful)
         addfile.write(a_string)
         print(a_string)
+        
