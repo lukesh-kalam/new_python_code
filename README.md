@@ -20,25 +20,20 @@ file_search=str(srch_file)
 d=str(server_name)
 filename=a+'_'+d+'_'+b
 print(filename)
-if(server_name=="mailwin1" or "mailwin2" or "samailserver1" or "samailserver2"):
+if(server_name=="samailserver5" or "samailserver6" or "mailsles1" or "mailsles2" or "mailaix1" or "mailaix2") :
     cwd = os.getcwd()
     print("Current working directory is:", cwd)
     # change the directory that contain console.log
-    os.chdir('C:\\Users\\kalam.kumar\\Desktop\\python1')
+    #os.chdir('C:\\Users\\kalam.kumar\\Desktop\\python1')
+    os.chdir('/local/notesdata/IBM_TECHNICAL_SUPPORT')
     cwd = os.getcwd()
     print("Current working directory is:", cwd)
-elif(server_name=="samailserver5" or "samailserver6" or "mailsles1" or "mailsles2") :
-    cwd = os.getcwd()
-    print("Current working directory is:", cwd)
-    # change the directory that contain console.log
-    os.chdir('C:\\Users\\kalam.kumar\\Desktop\\python1')
-    cwd = os.getcwd()
-    print("Current working directory is:", cwd)
-elif(server_name=="mailaix1" or "mailaix2") :
+elif(server_name=="mailwin1" or "mailwin2" or "samailserver1" or "samailserver2"):
     cwd = os.getcwd()
     print("Current working directory is:", cwd)
     # change the directory that contain console.log
-    os.chdir('C:\\Users\\kalam.kumar\\Desktop\\python1')
+    #os.chdir('C:\\Users\\kalam.kumar\\Desktop\\python1')
+    os.chdir('D:\\Domino\\data\\IBM_TECHNICAL_SUPPORT')
     cwd = os.getcwd()
     print("Current working directory is:", cwd)
 else :
@@ -68,3 +63,6 @@ with open (file_search, "r") as myfile , open(filename,'a') as addfile :
         a_string = "".join(useful)
         addfile.write(a_string)
         print(a_string)
+    myfile.close()
+    addfile.close()
+exit()
