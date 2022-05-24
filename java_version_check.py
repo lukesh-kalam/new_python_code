@@ -1,2 +1,2 @@
 import os,sys
-os.system('java -version')
+os.system('java -version'
